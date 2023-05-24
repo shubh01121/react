@@ -17,14 +17,14 @@ function App() {
     setData(!data);
   }
   return (
-    <>
+    <><div className="container">
     <h1 className="head">Styling Using Functional and Class Component</h1>
     <button onClick={handleFunction} className="button1"> To see styling in Functional Components</button>
     <button onClick={handleClass} className="button2"> To see styling in Class Components</button>
     
     {count ?<FunctionCompo/>:null}
     {data ?<ClassCompo/>:null}
-      
+    </div>
     </>
   );
 }
